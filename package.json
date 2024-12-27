@@ -1,0 +1,19 @@
+{
+  "name": "istoria-advertorial",
+  "version": "1.0.0",
+  "description": "Advertorial project showcasing windsurfing content",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrygberry1989/istoria-advertorial.git"
+  },
+  "keywords": ["advertorial", "static-site"],
+  "author": "Henry Berry",
+  "license": "ISC"
+}
