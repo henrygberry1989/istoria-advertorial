@@ -4,10 +4,10 @@
   "description": "Advertorial project showcasing windsurfing content",
   "main": "index.html",
   "scripts": {
-    "start": "npx http-server"
+    "start": "serve"
   },
   "dependencies": {
-    "http-server": "^14.1.1"
+    "serve": "^14.2.1"
   },
   "repository": {
     "type": "git",

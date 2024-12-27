@@ -1,9 +1,24 @@
-run = "python3 -m http.server"
-language = "python3"
+run = "npm run start"
+entrypoint = "index.html"
 
 [nix]
 channel = "stable-22_11"
 
-[deployment]
-run = ["sh", "-c", "python3 -m http.server"]
-deploymentTarget = "cloudrun"
+[languages]
+[languages.javascript]
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
+
+[languages.javascript.languageServer]
+start = "typescript-language-server --stdio"
+
+[languages.html]
+pattern = "**/*.html"
+
+[languages.html.languageServer]
+start = "vscode-html-language-server --stdio"
+
+[languages.css]
+pattern = "**/*.css"
+
+[languages.css.languageServer]
+start = "vscode-css-language-server --stdio"
